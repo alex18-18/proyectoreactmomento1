@@ -4,14 +4,14 @@ function Hero() {
       <div className="hero__text">
         <p className="hero__eyebrow">Lote 006 · Cosecha 2026</p>
         <h1 className="hero__title">
-          Del árbol de cacao <br /> a tu mesa.
+          Del arbol de cacao <br /> a tu mesa.
         </h1>
         <p className="hero__subtitle">
           Trabajamos directamente con productores de Tumaco, Arauca y Santander
-          para transformar cacao fino de aroma en barras de tueste pequeño.
+          para transformar cacao fino de aroma en barras de tueste pequeno.
         </p>
         <a className="hero__cta" href="#catalogo">
-          Ver catálogo
+          Ver catalogo
         </a>
       </div>
 

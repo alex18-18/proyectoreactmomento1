@@ -5,13 +5,13 @@ function Footer() {
     <footer className="footer">
       <div className="footer__col">
         <span className="footer__brand">Cacao &amp; Co.</span>
-        <p>Chocolate de origen colombiano, hecho en pequeños lotes.</p>
+        <p>Chocolate de origen colombiano, hecho en pequenos lotes.</p>
       </div>
 
       <div className="footer__col">
         <h4>Explorar</h4>
-        <a href="#catalogo">Catálogo</a>
-        <a href="#origenes">Orígenes</a>
+        <a href="#catalogo">Catalogo</a>
+        <a href="#origenes">Origenes</a>
         <a href="#nosotros">Nosotros</a>
       </div>
 
@@ -21,7 +21,7 @@ function Footer() {
         <a href="tel:+573000000000">+57 300 000 0000</a>
       </div>
 
-      <p className="footer__bottom">© {anio} Cacao & Co. Proyecto académico — Momento 1.</p>
+      <p className="footer__bottom">© {anio} Cacao & Co. Proyecto academico — Momento 1.</p>
     </footer>
   );
 }

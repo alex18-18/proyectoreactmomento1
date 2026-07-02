@@ -1,5 +1,3 @@
-// ProductCard es un componente "hijo": no conoce el arreglo completo,
-// solo recibe UN producto por props y lo renderiza.
 function ProductCard({ producto }) {
   const { nombre, origen, porcentaje, notas, precio, color, destacado } = producto;
 
@@ -29,7 +27,7 @@ function ProductCard({ producto }) {
         <div className="product-card__footer">
           <span className="product-card__price">{precioFormateado}</span>
           <button className="product-card__btn" type="button">
-            Añadir
+            Anadir
           </button>
         </div>
       </div>

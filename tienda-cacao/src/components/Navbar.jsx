@@ -1,5 +1,3 @@
-// Componente de presentación: no maneja datos propios,
-// recibe la cantidad de items del carrito por props.
 function Navbar({ cartCount }) {
   return (
     <header className="navbar">
@@ -9,8 +7,8 @@ function Navbar({ cartCount }) {
       </div>
 
       <nav className="navbar__links">
-        <a href="#catalogo">Catálogo</a>
-        <a href="#origenes">Orígenes</a>
+        <a href="#catalogo">Catalogo</a>
+        <a href="#origenes">Origenes</a>
         <a href="#nosotros">Nosotros</a>
       </nav>
 
