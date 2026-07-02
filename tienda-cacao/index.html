@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cacao y cafe</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap");
+
+    :root {
+      --ink: #15201b;
+      --pine: #1f5e4a;
+      --moss: #3e9c7a;
+      --marigold: #f2a03d;
+      --clay: #e8643c;
+      --paper: #f6f2e9;
+      --paper-2: #efe9dc;
+      --line: #ded6c5;
+      --font-display: "Fraunces", serif;
+      --font-body: "Plus Jakarta Sans", sans-serif;
+      --font-mono: "Space Mono", monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--font-body);
+    }
+
+    .wrap {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 0 28px;
+    }
+
+    header.page {
+      padding: 56px 0 40px;
+      border-bottom: 2px solid var(--ink);
+    }
+
+    .eyebrow {
+      font-family: var(--font-mono);
+      font-size: .75rem;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: var(--pine);
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-family: var(--font-display);
+      font-size: 2.4rem;
+      line-height: 1.1;
+      margin: 0 0 12px;
+      color: var(--ink);
+    }
+
+    .lead {
+      font-size: 1.05rem;
+      color: #4a5148;
+      max-width: 60ch;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    section {
+      padding: 40px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    section:last-of-type {
+      border-bottom: none;
+    }
+
+    h2 {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      color: var(--ink);
+      margin: 0 0 18px;
+    }
+
+    .num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      background: var(--ink);
+      color: var(--paper);
+      border-radius: 50%;
+      font-family: var(--font-mono);
+      font-size: .85rem;
+      font-weight: 700;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 8px;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 18px 20px;
+      box-shadow: 0 1px 3px rgba(21, 32, 27, .05);
+    }
+
+    .card h3 {
+      font-family: var(--font-display);
+      font-size: 1rem;
+      margin: 0 0 8px;
+      color: var(--ink);
+    }
+
+    .card p {
+      font-size: .9rem;
+      color: #5c5748;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    .tree {
+      background: var(--ink);
+      color: var(--paper);
+      font-family: var(--font-mono);
+      font-size: .85rem;
+      line-height: 1.7;
+      padding: 22px 24px;
+      border-radius: 10px;
+      overflow-x: auto;
+      white-space: pre;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
+    }
+
+    .tag {
+      background: var(--paper-2);
+      color: var(--pine);
+      font-family: var(--font-mono);
+      text-transform: uppercase;
+      font-size: .72rem;
+      padding: 5px 12px;
+      border-radius: 999px;
+    }
+
+    .checklist {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .checklist li {
+      display: flex;
+      gap: 10px;
+      font-size: .95rem;
+      align-items: flex-start;
+    }
+
+    .checklist li::before {
+      content: "";
+      color: var(--moss);
+      font-weight: 700;
+    }
+
+    code {
+      background: var(--paper-2);
+      color: var(--clay);
+      font-family: var(--font-mono);
+      font-size: .85em;
+      padding: 1px 6px;
+      border-radius: 4px;
+    }
+
+    footer.page {
+      padding: 28px 0 48px;
+      font-family: var(--font-mono);
+      font-size: .78rem;
+      color: #8a8272;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <header class="page">
+      <h1>Cacao y cafe </h1>
+      <p class="lead">
+        Tienda simulada de cafe colombiano hecha para cubrir los
+        tres entregables arbol de
+        componentes y gestion de estado con props.
+      </p>
+      <div class="tags">
+        <span class="tag">React</span>
+        <span class="tag">Vite</span>
+        <span class="tag">JSX</span>
+        <span class="tag">Props</span>
+        <span class="tag">Mock data</span>
+      </div>
+    </header>
+
+    <section>
+      <h2><span class="num">1</span>Proyecto React inicializado</h2>
+      <p class="lead">Creado con <code>npm create vite@latest</code>, plantilla React, y organizado en carpetas según
+        buenas practicas.</p>
+      <div class="tree" style="margin-top:18px;">tienda-cacao/
+        ── src/
+        │ ├── assets/ recursos estaticos
+        │ ├── components/ Navbar, Hero, ProductCard, Footer
+        │ ├── data/ products.js (mock data)
+        │ ├── views/ Home.jsx
+        │ ├── App.jsx
+        │ └── index.css
+        ├── index.html
+        └── package.json</div>
+    </section>
+
+    <section>
+      <h2><span class="num">2</span>arbol de componentes</h2>
+      <p class="lead" style="margin-bottom:18px;">La interfaz se dividio logicamente, sin un solo archivo gigante</p>
+      <div class="tree">App
+        ├─ Navbar (recibe cartCount por props)
+        ├─ Home
+        │ ├─ Hero
+        │ └─ ProductCard  N (uno por producto)
+         Footer</div>
+      <div class="cards" style="margin-top:20px;">
+        <div class="card">
+          <h3>Navbar</h3>
+          <p>Marca, links de navegacion y contador de carrito.</p>
+        </div>
+        <div class="card">
+          <h3>Hero</h3>
+          <p>Seccion principal de presentacion de la marca.</p>
+        </div>
+        <div class="card">
+          <h3>ProductCard</h3>
+          <p>Muestra un producto individual: nombre, origen, notas y precio.</p>
+        </div>
+        <div class="card">
+          <h3>Footer</h3>
+          <p>Enlaces, contacto y datos de cierre de pagina.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2><span class="num">3</span>Gestion de estado y props</h2>
+      <p class="lead">La interfaz no esta vacia: el catalogo se arma a partir de un arreglo de datos simulados.</p>
+      <ul class="checklist" style="margin-top:16px;">
+        <li>El mock data (6 productos) vive en <code>src/data/products.js</code></li>
+        <li>Se importa en el componente padre <code>Home.jsx</code></li>
+        <li>Se reparte a cada <code>&lt;ProductCard producto={'{producto}'} /&gt;</code> via props</li>
+        <li><code>Navbar</code> recibe <code>cartCount</code> por props desde <code>App</code></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="num"></span>Kit de marca aplicado</h2>
+      <p class="lead" style="margin-bottom:18px;">Tipografias y paleta tomadas del sistema de diseno de referencia</p>
+      <div class="cards">
+        <div class="card">
+          <h3>Fraunces</h3>
+          <p>Display titulares y numeros grandes</p>
+        </div>
+        <div class="card">
+          <h3>Plus Jakarta Sans</h3>
+          <p>Cuerpo  parrafos, botones, navegacion</p>
+        </div>
+        <div class="card">
+          <h3>Space Mono</h3>
+          <p>Tecnica  etiquetas, precios, odigo</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="page">
+     Momento 1 Ejecutar con <code>npm install</code> y <code>npm run dev</code>.
+    </footer>
+
+  </div>
+</body>
+
+</html>
